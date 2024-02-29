@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <!-- Plain Text Label -->
+    <TextView
+        android:id="@+id/plainTextLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plain Text:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Plain Text Input Field -->
+    <EditText
+        android:id="@+id/plainTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plainTextLabel"
+        android:layout_marginTop="8dp"
+        android:hint="Enter plain text"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/white"/>
+
+    <!-- Key Label -->
+    <TextView
+        android:id="@+id/keyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Key:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_below="@id/plainTextField"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Key Input Field -->
+    <EditText
+        android:id="@+id/keyField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/keyLabel"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter key"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/white"/>
+
+    <!-- Encrypt Button -->
+    <Button
+        android:id="@+id/encryptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@id/keyField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Decrypt Button -->
+    <Button
+        android:id="@+id/decryptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decrypt"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@id/encryptButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Encrypted Text Field -->
+
+    <EditText
+        android:id="@+id/encryptedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decryptButton"
+        android:layout_marginTop="49dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="Encrypted Text"
+        android:inputType="text"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/decryptedTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decryptButton"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="Decrypted Text"
+        android:inputType="text"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

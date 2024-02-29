@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/plain_text_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plain Text:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/plain_text_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plain_text_label"
+        android:layout_marginTop="8dp"
+        android:hint="Enter plaintext"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/key_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Key:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_below="@id/plain_text_field"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/key_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/key_label"
+        android:layout_marginTop="8dp"
+        android:hint="Enter key"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/key_expansion_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/key_field"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentEnd="true"
+        android:text="Key Expansion"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"/>
+
+    <Button
+        android:id="@+id/round_function_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/key_expansion_button"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:text="Round Function"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"/>\
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@id/round_function_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+</RelativeLayout>

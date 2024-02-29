@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient">
+
+    <TextView
+        android:id="@+id/textViewSBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S-Box Matrix"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <GridLayout
+        android:id="@+id/gridLayoutSBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="16"
+        android:columnCount="16"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridLayoutSBox"
+        android:layout_centerHorizontal="true"
+        android:text="Next"/>
+
+
+    <TextView
+        android:id="@+id/textViewOriginalMatrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Original Matrix"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <GridLayout
+        android:id="@+id/gridLayoutOriginalMatrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="1"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textViewSubstitutedMatrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Substituted Matrix"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <GridLayout
+        android:id="@+id/gridLayoutSubstitutedMatrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="1"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
